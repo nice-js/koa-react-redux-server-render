@@ -1,5 +1,5 @@
 {
-  "name": "koa-react-server-render",
+  "name": "koa-react-redux-server-render",
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
