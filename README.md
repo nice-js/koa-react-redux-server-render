@@ -2,8 +2,15 @@
 
 react routes
 
-routes.js
+```js
+
+app.use(reactReduxServerRender(routes,createStore,render)
+
 ```
+
+routes.js
+
+```js
 export default(history) => (
   <Router history={history}>
     <Route path='/home' component={Home}/>
@@ -12,7 +19,9 @@ export default(history) => (
 )
 ```
 
-```
+
+```js
+
 import Koa from 'koa'
 import reactReduxServerRender from 'koa-react-redux-server-render'
 import configureStore from '../src/store/configureStore'
@@ -21,8 +30,11 @@ import createRoutes from '../src/routes'
 
 const app=Koa()
 
+// apply react server render
 const history = createMemoryHistory()
-app.use(reactReduxServerRender(createRoutes(history), store, function* (models) {
+app.use(reactReduxServerRender(createRoutes(history), () => {
+  return configureStore({}, history)
+}, function* (models) {
   yield this.render('index', models)
 }))
 ```

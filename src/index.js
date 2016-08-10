@@ -63,7 +63,7 @@ const _renderComponents = (props, store) => {
 }
 
 // middleware
-export default (routes, store, render) => {
+export default (routes, createStore, render) => {
   if (!render) {
     throw new Error('render is required')
   }
@@ -88,6 +88,9 @@ export default (routes, store, render) => {
 
       // render props
       if (renderProps) {
+
+        //create new store
+        const store = createStore()
         // ensure static fetchData run
         const fetchData = _getFetchDataPromise(renderProps, store)
 
