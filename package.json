@@ -1,6 +1,6 @@
 {
   "name": "koa-react-redux-server-render",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nice-js/koa-react-server-render.git"
+    "url": "git+https://github.com/nice-js/koa-react-redux-server-render.git"
   },
   "keywords": [
     "koa",
@@ -31,9 +31,9 @@
     "redux"
   ],
   "bugs": {
-    "url": "https://github.com/nice-js/koa-react-server-render/issues"
+    "url": "https://github.com/nice-js/koa-react-redux-server-render/issues"
   },
-  "homepage": "https://github.com/nice-js/koa-react-server-render#readme",
+  "homepage": "https://github.com/nice-js/koa-react-redux-server-render#readme",
   "description": "koa react redux server render middleware",
   "dependencies": {
     "debug": "^2.2.0",
