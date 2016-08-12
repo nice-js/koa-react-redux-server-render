@@ -10,7 +10,7 @@
 
 Demo
 
-[m.botdir.io](http://m.botdir.io/list)
+[m.botdir.io](http://m.botdir.io)
 
 ## 安装
 
