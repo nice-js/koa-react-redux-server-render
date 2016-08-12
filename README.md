@@ -14,7 +14,7 @@ Demo
 
 ## 安装
 
-Install using [npm](https://www.npmjs.org/):
+Install using [npm](http://www.npmjs.org/):
 
 ```sh
 npm install koa-react-redux-server-render --save
